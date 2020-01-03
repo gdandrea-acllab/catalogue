@@ -14,7 +14,7 @@ def tagMatchRules = [
 
 pipeline {
   agent {
-    label 'golang2'
+    label 'golang2','JENKINS_URL=http://159.122.10.206:81' 
   }
   environment {
     APP_NAME = "catalogue"
